@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídeas em HTML5</title>
+</head>
+<body>
+    <H1>Imagem dinámica</H1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="img/foto-p.png" type="image/png"><!--carregando largura da foto-->
+        <source media="(max-width: 1050px )" srcset="img/foto-m.png" type="image/png">
+        <img src="img/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5.</p>
+    <p>Utilizando a tag audio pois e o meio mais simples.</p>
+    
+    <audio preload="metadata" controls play>
+        <source src="midias/(I've Got A) Baby Sister - Reed Mathis.mp3" type="audio/mpeg">
+    </audio>
+    <audio preload="metadata" controls play>
+        <source src="midias/A to the O - Diamond Ortiz.mp3" type="audio/mpeg">
+    </audio>
+    <audio preload="metadata" controls play>
+        <source src="midias/guanacast-33.mp3" type="audio/mpeg">
+    </audio>
+    <audio preload="metadata" controls play>
+        <source src="midias/happy-guana.mp3" type="audio/mp3">
+    </audio>
+
+    <audio preload="metadata" controls play>
+        <source src="midias/I Did That - Diamond Ortiz.mp3" type="audio/mp3">
+    </audio>
+
+    
+    <p><a href="midias/I Did That - Diamond Ortiz.mp3">Se não reproduzir, clique no link.</a></p>
+        
+</body>
+</html>

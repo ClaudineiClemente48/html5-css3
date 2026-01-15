@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        seletores personalizados
+        #  = id
+        .  = class
+        :  = pseudo-class
+        :: = pseudo-element
+        >  = clildren (filho)
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none;/*éo sublinhado embaixo*/
+            font-weight: bold;/*negrito*/
+        }
+        a:visited {
+            color: darkred;
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;/*grifado ou sublinhado*/
+        }
+        a:active {
+            color: yellow;
+        }
+        .especial {
+            background-color: rgb(255, 140, 140);
+        }
+        .especial::before {
+            content: '=> ';
+        }
+        .especial::after {
+            content: ' <=';
+           
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/ClaudineiClemente48" target="_blank" class="especial">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/@claudineisantos3161" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://www.linkedin.com/in/claudinei-santos-31923b2a9/" target="_blank">Site do Linkdin</a></li>
+    </ul>
+    
+</body>
+</html>
