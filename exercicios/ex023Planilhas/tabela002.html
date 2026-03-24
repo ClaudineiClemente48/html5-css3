@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+        thead > tr >th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        tbody > tr:nth-child(odd) {/*odd significa impares (2n-1)*/
+            background-color: rgb(105, 243, 25);
+        }
+        tbody > tr:nth-child(even) {/*even significa pares(2n)*/
+            background-color: rgb(250, 234, 7);
+        }
+        td.num {
+            text-align: right;
+        }
+        td.posicao {
+            width: 1px;
+            text-align: center;
+            color: rgb(241, 28, 28);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--ANATOMIAS PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead><!--cabeça-->
+            <tr>
+                <th scope="col" style="width: 50px;">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody><!--corpo-->
+            <tr>
+                <td class="posicao">1</td>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>  
+            </tr>
+            <tr>
+                <td class="posicao">2</td>
+                <td>Minas Gerais</td>
+                <td class="num">21.166.791</td>
+            </tr>
+            <tr>
+                <td class="posicao">3</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td class="posicao">4</td>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td class="posicao">5</td>
+                <td>Paraná</td>
+                <td class="num">11.433.957</td>
+            </tr>
+            <tr>
+                <td class="posicao">6</td>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.239</td>
+            </tr>
+            <tr>
+                <td class="posicao">7</td>
+                <td>Pernambuco</td>
+                <td class="num">9.557.071</td>
+            </tr>
+            <tr>
+                <td class="posicao">8</td>
+                <td>Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td class="posicao">9</td>
+                <td>Pará</td>
+                <td class="num">8.602.865</td>
+            </tr>
+            <tr>
+                <td class="posicao">10</td>
+                <td>Santa Catarina</td>
+                <td class="num">7.164.788</td>
+            </tr>
+            <tr>
+                <td class="posicao">11</td>
+                <td>Goiás</td>
+                <td class="num">7.018.354</td>
+            </tr>
+            <tr>
+                <td class="posicao">12</td>
+                <td>Maranhão</td>
+                <td class="num">7.010.960</td>
+            </tr>
+            <tr>
+                <td class="posicao">13</td>
+                <td>Amazonas</td>
+                <td class="num">4.281.209</td>
+            </tr>
+            <tr>
+                <td class="posicao">14</td>
+                <td>Paraíba</td>
+                <td class="num">4.164.468</td>
+            </tr>
+            <tr>
+                <td class="posicao">15</td>
+                <td>Espírito Santo</td>
+                <td class="num">4.126.854</td>
+            </tr>
+            <tr>
+                <td class="posicao">16</td>
+                <td>Mato Grosso</td>
+                <td class="num">3.893.659</td>
+            </tr>
+            <tr>
+                <td class="posicao">17</td>
+                <td>Rio Grandedo Norte</td>
+                <td class="num">3.455.236</td>
+            </tr>
+            <tr>
+                <td class="posicao">18</td>
+                <td>Piauí</td>
+                <td class="num">3.384.547</td>
+            </tr>
+            <tr>
+                <td class="posicao">19</td>
+                <td>Alagoas</td>
+                <td class="num">3.220.848</td>
+            </tr>
+            <tr>
+                <td class="posicao">20</td>
+                <td>distrito Federal</td>
+                <td class="num">2.996.899</td>
+            </tr>
+            <tr>
+                <td class="posicao">21</td>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2.924.631</td>
+            </tr>
+            <tr>
+                <td class="posicao">22</td>
+                <td>Sergipe</td>
+                <td class="num">2.299.425</td>
+            </tr>
+            <tr>
+                <td class="posicao">23</td>
+                <td>Rondônia</td>
+                <td class="num">1.751.950</td>
+            </tr>
+            <tr>
+                <td class="posicao">24</td>
+                <td>Tocantins</td>
+                <td class="num">1.586.859</td>
+            </tr>
+            <tr>
+                <td class="posicao">25</td>
+                <td>Acre</td>
+                <td class="num">884.372</td>
+            </tr>
+            <tr>
+                <td class="posicao">26</td>
+                <td>Amapá</td>
+                <td class="num">806.517</td>
+            </tr>
+            <tr>
+                <td class="posicao">27</td>
+                <td>Roraima</td>
+                <td class="num">738.772</td>
+            
+        </tbody>
+        <tfoot><!--pé-->
+            <tr>
+                <th scope="row" colspan="2">Total de Habitantes</th>
+                <td class="num"><strong>210.147.125</strong></td>
+            </tr> 
+        </tfoot>
+    </table>
+    <p>O site apresentado tem como objetivo demonstrar o uso de tabelas grandes em HTML, organizando dados de forma clara e estruturada. Logo no início da página, há um título principal “Uso de tabelas grandes”, que indica o tema abordado.</p>
+
+    <p>A tabela exibida mostra a população das unidades federativas do Brasil, organizando as informações em três colunas: posição, estado e população. Para melhorar a organização, a tabela foi dividida em três partes principais: o cabeçalho (thead), o corpo (tbody) e o rodapé (tfoot). O cabeçalho apresenta os títulos das colunas, o corpo contém os dados dos estados e o rodapé exibe o total geral da população.</p>
+
+    <p>Além da estrutura em HTML, o site utiliza CSS para melhorar a aparência visual. A tabela possui bordas, espaçamento interno e cores diferenciadas. As linhas são destacadas com cores alternadas (verde e amarelo), facilitando a leitura dos dados. O cabeçalho permanece fixo no topo da tabela ao rolar a página (efeito sticky), o que ajuda na visualização em tabelas grandes.</p>
+
+    <p>Outro detalhe importante é o alinhamento dos dados: os números estão alinhados à direita para melhor organização, enquanto a coluna de posição é centralizada e destacada com cor diferente.</p>
+
+    <p>De forma geral, o site é um bom exemplo prático de como criar e estilizar tabelas em HTML, demonstrando tanto a estrutura semântica quanto técnicas de formatação com CSS para melhorar a usabilidade e a apresentação das informações.</p>
+    
+    
+</body>
+</html>
