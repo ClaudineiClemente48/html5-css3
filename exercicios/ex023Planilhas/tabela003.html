@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .normal {
+            background-color: green;
+        }
+        /*.vert {
+            background-color: red;
+        }
+        .horiz {
+            background-color: yellow;
+        }*/
+        tr:has(td[colspan]){
+            background-color: yellow;
+        }
+        tr:has(td[rowspan]) {
+            background-color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de células</h1>
+    <table>
+        <tr>
+            <td class="normal">A</td>
+            <td colspan="2" class="horiz">B</td><!--ocupando 2 coluna horizontal-->
+            
+        </tr>
+        <tr>
+            <td rowspan="3" class="vert">D</td><!--ocupando 3 coluna vertical-->
+            <td class="normal">E</td>
+            <td rowspan="2" class="vert">F</td><!--ocupando 2 coluna vertical-->
+        </tr>
+        <tr>
+            
+            <td class="normal">H</td>
+            
+        </tr>
+        <tr>
+            
+            <td colspan="2" class="horiz">L</td><!--ocupando 2coluna horizontal-->
+            
+        </tr>
+    </table>
+    
+</body>
+</html>
