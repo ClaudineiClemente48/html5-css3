@@ -1,0 +1,14 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open iframe001.html",
+            "file": "c:\\Users\\claudinei\\Documents\\estudos-guanabara\\html-css\\exercicios\\ex024\\iframe001.html"
+        }
+    ]
+}
